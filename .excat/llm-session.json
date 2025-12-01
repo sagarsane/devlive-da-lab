@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "sessionId": "00ee47a0-3760-42c4-b1f8-db50cfae8137",
+  "chatHistory": [
+    {
+      "role": "user",
+      "content": "What blocks do I have?",
+      "timestamp": 1764621784999
+    },
+    {
+      "role": "assistant",
+      "content": "I'll check what blocks are available in your project.",
+      "timestamp": 1764621790819
+    },
+    {
+      "role": "assistant",
+      "content": "Let me check if there's a blocks directory at all:",
+      "timestamp": 1764621794821
+    },
+    {
+      "role": "assistant",
+      "content": "You have the following blocks available:\n\n1. **card** - For displaying card-style content\n2. **columns** - For multi-column layouts\n3. **footer** - Footer section\n4. **fragment** - For reusable content fragments\n5. **header** - Header section\n6. **hero** - Hero/banner sections\n7. **schedule** - For displaying schedules\n8. **section-metadata** - For section-level styling and configuration\n9. **table** - For displaying tables\n10. **youtube** - For embedding YouTube videos\n\nEach of these blocks has its own JavaScript and CSS files that define how it behaves and appears on your pages.",
+      "timestamp": 1764621802769
+    }
+  ],
+  "currentTodos": [],
+  "activeSubAgents": [],
+  "savedAt": 1764621802817
+}
