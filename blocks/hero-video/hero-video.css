@@ -1,3 +1,4 @@
+/* AbbVie Hero Video Block */
 .hero-video-container .hero-video-wrapper {
   max-width: unset;
   padding: 0;
@@ -5,33 +6,57 @@
 
 .hero-video {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  padding: 80px 70px;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
 }
 
-.hero-video h1,
-.hero-video h2,
-.hero-video h3,
-.hero-video h4,
-.hero-video h5,
-.hero-video h6,
-.hero-video p {
+.hero-video > div {
+  position: relative;
+  z-index: 2;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  margin: 0 auto;
+  width: 100%;
 }
 
-.hero-video.no-image * {
-  color: var(--text-color);
+.hero-video h1 {
+  color: var(--color-white);
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.hero-video p {
+  margin: 0;
+}
+
+.hero-video a {
+  color: var(--color-white);
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-video a:hover {
+  opacity: 0.8;
 }
 
 .hero-video picture {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   inset: 0;
   object-fit: cover;
   box-sizing: border-box;
+}
+
+.hero-video picture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .hero-video img {
@@ -40,8 +65,24 @@
   height: 100%;
 }
 
-@media (width >= 900px) {
+@media (width <= 900px) {
   .hero-video {
-    padding: 40px 32px;
+    padding: 60px 24px;
+    min-height: 400px;
+  }
+
+  .hero-video h1 {
+    font-size: 32px;
+  }
+}
+
+@media (width <= 600px) {
+  .hero-video {
+    padding: 40px 16px;
+    min-height: 350px;
+  }
+
+  .hero-video h1 {
+    font-size: 28px;
   }
 }

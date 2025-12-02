@@ -1,33 +1,64 @@
+/* AbbVie Columns News Block - Two column layout for news/press releases */
+.columns-news {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 70px;
+}
+
 .columns-news > div {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.columns-news h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-navy-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.84px;
+  margin-bottom: 24px;
+}
+
+.columns-news p {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.columns-news strong {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .columns-news img {
   width: 100%;
+  margin-bottom: 16px;
 }
 
-.columns-news > div > div {
-  order: 1;
+.columns-news a {
+  color: var(--color-blue-primary);
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.columns-news > div > .columns-news-img-col {
-  order: 0;
+.columns-news a:hover {
+  text-decoration: underline;
 }
 
-.columns-news > div > .columns-news-img-col img {
-  display: block;
-}
-
-@media (width >= 900px) {
-  .columns-news > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+@media (width <= 900px) {
+  .columns-news {
+    padding: 40px 24px;
   }
 
-  .columns-news > div > div {
-    flex: 1;
-    order: unset;
+  .columns-news > div {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (width <= 600px) {
+  .columns-news {
+    padding: 32px 16px;
   }
 }

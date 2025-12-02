@@ -1,19 +1,38 @@
+/* AbbVie Cards Innovation Block */
+.cards-innovation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 70px;
+}
+
+.cards-innovation h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--color-navy-primary);
+  margin-bottom: 24px;
+}
+
+.cards-innovation > p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-navy-primary);
+  margin-bottom: 40px;
+}
+
 .cards-innovation > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
 }
 
 .cards-innovation > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
-}
-
-.cards-innovation .cards-innovation-card-body {
-  margin: 16px;
+  background-color: var(--color-white);
+  border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards-innovation .cards-innovation-card-image {
@@ -22,6 +41,60 @@
 
 .cards-innovation > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+.cards-innovation .cards-innovation-card-body {
+  padding: 24px;
+  flex: 1;
+}
+
+.cards-innovation .cards-innovation-card-body h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-navy-primary);
+  margin-bottom: 16px;
+}
+
+.cards-innovation .cards-innovation-card-body p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-navy-primary);
+  margin-bottom: 16px;
+}
+
+.cards-innovation .cards-innovation-card-body a {
+  color: var(--color-blue-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cards-innovation .cards-innovation-card-body a:hover {
+  text-decoration: underline;
+}
+
+/* Stat cards (those with large numbers) */
+.cards-innovation .cards-innovation-card-body strong {
+  display: block;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--color-navy-primary);
+  margin-bottom: 8px;
+}
+
+@media (width <= 900px) {
+  .cards-innovation {
+    padding: 40px 24px;
+  }
+
+  .cards-innovation > ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 600px) {
+  .cards-innovation {
+    padding: 32px 16px;
+  }
 }
