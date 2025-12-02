@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-innovation",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-12-02T16:46:33.801Z",
+  "sourceContext": {
+    "originUrl": "file:///workspace/import-work/Pharmaceutical Research & Development _ AbbVie.html",
+    "originPage": "AbbVie homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "spacious",
+    "purpose": "innovation-stats",
+    "imagePattern": "mixed"
+  },
+  "contentPattern": {
+    "structure": "3 cards (image card + 2 stat cards)",
+    "buttonCount": 1,
+    "imageCount": 1,
+    "cardCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "innovation showcases",
+      "mixed content with images and stats",
+      "3-column card layouts with varied content types"
+    ],
+    "notSuitableFor": [
+      "uniform card types",
+      "more than 3 cards",
+      "text-only cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/workspace/import-work/pharmaceutical-research-development-abbvie"],
+    "reuseCount": 1,
+    "lastUsed": "2025-12-02T16:46:33.801Z"
+  }
+}
