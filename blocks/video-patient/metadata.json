@@ -1,0 +1,40 @@
+{
+  "variantName": "video-patient",
+  "baseBlock": "video",
+  "version": "1.0.0",
+  "created": "2025-12-02T16:46:33.721Z",
+  "sourceContext": {
+    "originUrl": "file:///workspace/import-work/Pharmaceutical Research & Development _ AbbVie.html",
+    "originPage": "AbbVie homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "patient-story",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "video with overlay text",
+    "buttonCount": 0,
+    "imageCount": 1,
+    "videoCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "patient story videos",
+      "testimonial videos",
+      "featured video content with poster image"
+    ],
+    "notSuitableFor": [
+      "background videos",
+      "videos without poster images",
+      "multiple videos in sequence"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/workspace/import-work/pharmaceutical-research-development-abbvie"],
+    "reuseCount": 1,
+    "lastUsed": "2025-12-02T16:46:33.721Z"
+  }
+}

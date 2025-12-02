@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-impact",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-12-02T16:46:40.915Z",
+  "sourceContext": {
+    "originUrl": "file:///workspace/import-work/Pharmaceutical Research & Development _ AbbVie.html",
+    "originPage": "AbbVie homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "grid",
+    "purpose": "sustainability-impact",
+    "imagePattern": "mixed"
+  },
+  "contentPattern": {
+    "structure": "4 cards in grid (stat card + 3 content cards)",
+    "buttonCount": 0,
+    "imageCount": 0,
+    "cardCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "sustainability sections",
+      "4-card grid layouts",
+      "mixed stat and content cards"
+    ],
+    "notSuitableFor": [
+      "fewer than 4 cards",
+      "uniform card types",
+      "cards with images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/workspace/import-work/pharmaceutical-research-development-abbvie"],
+    "reuseCount": 1,
+    "lastUsed": "2025-12-02T16:46:40.915Z"
+  }
+}

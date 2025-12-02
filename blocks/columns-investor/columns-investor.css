@@ -1,0 +1,33 @@
+.columns-investor > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-investor img {
+  width: 100%;
+}
+
+.columns-investor > div > div {
+  order: 1;
+}
+
+.columns-investor > div > .columns-investor-img-col {
+  order: 0;
+}
+
+.columns-investor > div > .columns-investor-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-investor > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns-investor > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-culture",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-12-02T16:46:40.808Z",
+  "sourceContext": {
+    "originUrl": "file:///workspace/import-work/Pharmaceutical Research & Development _ AbbVie.html",
+    "originPage": "AbbVie homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "culture-links",
+    "imagePattern": "images"
+  },
+  "contentPattern": {
+    "structure": "3 cards with images + short text",
+    "buttonCount": 0,
+    "imageCount": 3,
+    "cardCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "culture sections",
+      "3-column image cards with short descriptions",
+      "linked content cards"
+    ],
+    "notSuitableFor": [
+      "cards without images",
+      "more than 3 cards",
+      "detailed descriptions"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/workspace/import-work/pharmaceutical-research-development-abbvie"],
+    "reuseCount": 1,
+    "lastUsed": "2025-12-02T16:46:40.808Z"
+  }
+}
