@@ -380,3 +380,6 @@ aem-sidekick {
     display: block;
   }
 }
+
+/* Import AbbVie enhancements */
+@import url('abbvie-enhancements.css');
