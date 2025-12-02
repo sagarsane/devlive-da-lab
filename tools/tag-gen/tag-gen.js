@@ -97,6 +97,7 @@ customElements.define('adl-tag-gen', ADLTagGen);
 
   const cmp = document.createElement('adl-tag-gen');
   cmp.path = `/${org}/${repo}${path}`;
+  //console.log("Token:", token);
   cmp.token = token;
 
   document.body.append(cmp);

@@ -11,3 +11,4 @@ helix-importer-ui
 
 #Exp Catalyst files
 .excat/
+.env
