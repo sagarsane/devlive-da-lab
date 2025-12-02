@@ -100,8 +100,8 @@ export default async function init(el) {
   if (metadata.gap?.text) handleLayout(metadata.gap.text, section, 'gap');
   if (metadata.spacing?.text) handleLayout(metadata.spacing.text, section, 'spacing');
   if (metadata.container?.text) handleLayout(metadata.container.text, section, 'container');
-  if (metadata['background-color']?.content) handleBackground(metadata['background-color'].content, section);
-  if (metadata['background-image']?.content) handleBackground(metadata['background-image'].content, section);
+  if (metadata['background-color']?.content) handleBackground(metadata['background-color'], section);
+  if (metadata['background-image']?.content) handleBackground(metadata['background-image'], section);
   if (metadata.background?.content) handleBackground(metadata.background, section);
   el.remove();
 }
