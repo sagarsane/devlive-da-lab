@@ -29,7 +29,7 @@
 }
 
 .cards-impact > ul > li {
-  background-color: var(--color-white);
+  background-color: rgb(241, 243, 255);
   border: none;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@
 }
 
 .cards-impact .cards-impact-card-body {
-  padding: 24px;
+  padding: 24px 32px;
   flex: 1;
 }
 

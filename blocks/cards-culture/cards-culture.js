@@ -1,24 +1,25 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
-import { moveInstrumentation } from '../../scripts/scripts.js';
-
 export default function decorate(block) {
-  /* change to ul, li */
-  const ul = document.createElement('ul');
-  [...block.children].forEach((row) => {
-    const li = document.createElement('li');
-    moveInstrumentation(row, li);
-    while (row.firstElementChild) li.append(row.firstElementChild);
-    [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-culture-card-image';
-      else div.className = 'cards-culture-card-body';
-    });
-    ul.append(li);
+  // Get all list items (cards)
+  const ul = block.querySelector('ul');
+  if (!ul) return;
+
+  ul.querySelectorAll(':scope > li').forEach((li) => {
+    // Find the image
+    const picture = li.querySelector('picture');
+    if (picture) {
+      const imageDiv = document.createElement('div');
+      imageDiv.className = 'cards-culture-card-image';
+      imageDiv.append(picture);
+      li.prepend(imageDiv);
+    }
+
+    // Wrap remaining content in card body
+    const content = li.querySelectorAll(':scope > *:not(.cards-culture-card-image)');
+    if (content.length > 0) {
+      const cardBody = document.createElement('div');
+      cardBody.className = 'cards-culture-card-body';
+      content.forEach((el) => cardBody.append(el));
+      li.append(cardBody);
+    }
   });
-  ul.querySelectorAll('picture > img').forEach((img) => {
-    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
-    moveInstrumentation(img, optimizedPic.querySelector('img'));
-    img.closest('picture').replaceWith(optimizedPic);
-  });
-  block.textContent = '';
-  block.append(ul);
 }
