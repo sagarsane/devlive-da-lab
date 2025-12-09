@@ -1,0 +1,64 @@
+/* AbbVie Columns Investor Block - Two column layout for news/press releases */
+.columns-investor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 70px;
+}
+
+.columns-investor > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.columns-investor h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-navy-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.84px;
+  margin-bottom: 24px;
+}
+
+.columns-investor p {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.columns-investor strong {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.columns-investor img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.columns-investor a {
+  color: var(--color-blue-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.columns-investor a:hover {
+  text-decoration: underline;
+}
+
+@media (width <= 900px) {
+  .columns-investor {
+    padding: 40px 24px;
+  }
+
+  .columns-investor > div {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (width <= 600px) {
+  .columns-investor {
+    padding: 32px 16px;
+  }
+}

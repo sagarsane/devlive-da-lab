@@ -1,0 +1,105 @@
+/* AbbVie Video Patient Block */
+.video-patient {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 70px;
+}
+
+.video-patient h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--color-navy-primary);
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.video-patient > p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-navy-primary);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (width <= 900px) {
+  .video-patient {
+    padding: 40px 24px;
+  }
+}
+
+@media (width <= 600px) {
+  .video-patient {
+    padding: 32px 16px;
+  }
+
+  .video-patient h2 {
+    font-size: 24px;
+  }
+}
+
+.video-patient[data-embed-loaded='false']:not(.placeholder) {
+  /* reserve an approximate space to avoid extensive layout shifts */
+  aspect-ratio: 16 / 9;
+}
+
+.video-patient > div {
+  display: flex;
+  justify-content: center;
+}
+
+.video-patient video {
+  max-width: 100%;
+}
+
+.video-patient .video-patient-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+
+.video-patient .video-patient-placeholder > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+}
+
+.video-patient[data-embed-loaded='true'] .video-patient-placeholder,
+.video-patient[data-embed-loaded='false'] .video-patient-placeholder + * {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.video-patient .video-patient-placeholder picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-patient .video-patient-placeholder-play button {
+  position: relative;
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  outline: 2px solid;
+  padding: 0;
+}
+
+.video-patient .video-patient-placeholder-play button::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 0;
+  height: 24px;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 18px solid;
+  top: 50%;
+  left: calc(50% + 2px);
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,100 @@
+/* AbbVie Cards Impact Block */
+.cards-impact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 70px;
+}
+
+.cards-impact h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--color-navy-primary);
+  margin-bottom: 24px;
+}
+
+.cards-impact > p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-navy-primary);
+  margin-bottom: 40px;
+}
+
+.cards-impact > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.cards-impact > ul > li {
+  background-color: rgb(241, 243, 255);
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-impact .cards-impact-card-image {
+  line-height: 0;
+}
+
+.cards-impact > ul > li img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.cards-impact .cards-impact-card-body {
+  padding: 24px 32px;
+  flex: 1;
+}
+
+.cards-impact .cards-impact-card-body h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-navy-primary);
+  margin-bottom: 16px;
+}
+
+.cards-impact .cards-impact-card-body p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-navy-primary);
+  margin-bottom: 16px;
+}
+
+.cards-impact .cards-impact-card-body a {
+  color: var(--color-blue-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cards-impact .cards-impact-card-body a:hover {
+  text-decoration: underline;
+}
+
+/* Stat cards (those with large numbers) */
+.cards-impact .cards-impact-card-body strong {
+  display: block;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--color-navy-primary);
+  margin-bottom: 8px;
+}
+
+@media (width <= 900px) {
+  .cards-impact {
+    padding: 40px 24px;
+  }
+
+  .cards-impact > ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 600px) {
+  .cards-impact {
+    padding: 32px 16px;
+  }
+}
